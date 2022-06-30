@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="w3-container">
+      <h1>Random Password Generator</h1>
+      <p>This tool can generate strong, random passwords.</p>
+
+      <div class="w3-panel w3-green">
+        <h3>Password</h3>
+      </div>
+      <div style="display: flex">
+        <input
+          type="text"
+          class="w3-input"
+          placeholder="Password will shown here"
+          id="input"
+        />
+        <button class="w3-button w3-green" id="copy">Copy Password</button>
+      </div>
+      <p>Password Strength: <span class="w3-tag w3-red" id="str">Week</span></p>
+      <div class="w3-panel w3-gray">
+        <h5>Password Options</h5>
+
+        <div class="w3-margin-top w3-cell">
+          <label>Password Length</label>
+          <input class="w3-input w3-border" type="number" id="len" value="6"/>
+        </div>
+        <div class="w3-margin-top">
+          <input class="w3-check" type="checkbox" checked="checked" id="lower_check"/>
+          <label>Include Lower Case - (a-z)</label>
+        </div>
+        <div class="w3-margin-top">
+          <input class="w3-check" type="checkbox" checked="checked" id="higher_check"/>
+          <label>Include Upper Case - (A-Z)</label>
+        </div>
+        <div class="w3-margin-top">
+          <input class="w3-check" type="checkbox" checked="checked" id="number_check"/>
+          <label>Include Numbers - (0-9)</label>
+        </div>
+        <div class="w3-margin-top">
+          <input class="w3-check" type="checkbox" checked="checked" id="symbol_check"/>
+          <label>Include Symbols - (*@#+%)</label>
+        </div>
+        <button
+          class="w3-button w3-black w3-margin-top w3-margin-bottom"
+          id="btn"
+        >
+          Generate New Password
+        </button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
